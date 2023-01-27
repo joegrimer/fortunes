@@ -1,0 +1,9 @@
+pushd ~/fortunes
+ff
+
+# regenerate quotes
+cat *.quotes > quotes
+strfile -c % quotes quotes.dat
+
+popd
+rerc
